@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  const links = ['a&b'];
+</script>
+
+<h1>page 1</h1>
+
+{#each links as href}
+  <a {href}>{href}</a>
+{/each}
